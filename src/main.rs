@@ -2,13 +2,6 @@
 
 use std::collections::HashMap;
 
-/*
-    Fill in the boggle function below. Use as many helpers as you want.
-    Test your code by running 'cargo test' from the tester_rs_simple directory.
-
-    To demonstrate how the HashMap can be used to store word/coord associations,
-    the function stub below contains two sample words added from the 2x2 board.
-*/
 fn boggle(board: &[&str], words: &[String]) -> HashMap<String, Vec<(u8, u8)>> {
     let mut found: HashMap<String, Vec<(u8, u8)>> = HashMap::new();
     let mut trie = Trie::new(words);
